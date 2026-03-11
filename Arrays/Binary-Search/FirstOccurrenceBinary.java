@@ -37,7 +37,7 @@ public class FirstOccurrenceBinary {
 
             if(arr[mid] == target) {
                 result = mid;  // store currrent index
-                end = mid - 1; // move right to find  occurrence
+                end = mid - 1; // move left to find  occurrence
             } else if(arr[mid] < target) {
                 start = mid + 1;  // Search in right half
             } else {
